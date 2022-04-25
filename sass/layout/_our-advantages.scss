@@ -1,0 +1,40 @@
+.our-advantages .card-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -30px;
+}
+
+.our-advantages .item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: 30px;
+}
+
+.our-advantages .over-icon {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgc-accent-color);
+  border: transparent;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.our-advantages .icon {
+  fill: var(--title-text-color);
+}
+
+.our-advantages .subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.our-advantages .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  line-height: 1.71;
+  text-align: left;
+  vertical-align: top;
+}

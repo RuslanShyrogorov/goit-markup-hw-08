@@ -1,0 +1,35 @@
+.what-we-do.section {
+  padding-top: 0px;
+}
+
+.what-we-do .title {
+  margin-bottom: 50px;
+}
+
+.what-we-do .list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -30px;
+}
+
+.what-we-do .item {
+  position: relative;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+}
+
+.what-we-do .label-text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--bgc-primary-color);
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}

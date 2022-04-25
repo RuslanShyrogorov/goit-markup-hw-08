@@ -1,0 +1,36 @@
+.sub-nav .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: left;
+  vertical-align: Top;
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
+  }
+
+  .logo-blu {
+    color: var(--accent-text-color);
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+    vertical-align: Top;
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+    
+}
