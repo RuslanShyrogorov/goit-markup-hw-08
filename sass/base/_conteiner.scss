@@ -1,7 +1,27 @@
-.conteiner {
-  width: 1200px;
+// untill 480px
+.conteiner{
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+// 480px +
+@media screen and (min-width: 480px) {
+  .conteiner {
+  width: 450px;
+  margin: 0 auto;
+  }
+}
+
+// 768px +
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 738px;
+  }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1170px;
+  }
 }

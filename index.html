@@ -18,37 +18,84 @@
 <body class="body">
     <header class="header section">
         <div class="main-nav conteiner">
-            <nav class="sub-nav">
-                <a lang="en" href="./index.html" class="logo item"><span class="logo-blu">Web</span>Studio</a>
-                <ul class="list site-nav-list">
-                    <li class="item">
-                        <a href="./index.html" class="link current">Студия</a>
+            <nav class="main-nav__sub-nav">
+                <a lang="en" href="./index.html" class="main-nav__logo logo item"><span class="main-nav__logo-blu logo">Web</span>Studio</a>
+                <ul class="main-nav__list list">
+                    <li class="main-nav__item item">
+                        <a href="./index.html" class="main-nav__link link main-nav__link_current">Студия</a>
                     </li>
-                    <li class="item">
-                        <a href="./portfolio.html" class="link">Портфолио</a>
+                    <li class="main-nav__item item">
+                        <a href="./portfolio.html" class="main-nav__link link">Портфолио</a>
                     </li>
-                    <li class="item">
-                        <a href="#contacts" class="link">Контакты</a>
+                    <li class="main-nav__item item">
+                        <a href="#contacts" class=" main-nav__link link">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="list contacts-list">
-                <li class="item contacts-item">
-                    <a href="mailto:info@devstudio.com" class="link contacts-link">info@devstudio.com
-                        <svg class="contacts-link-icon" width="16" height="12">
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-icon" width="40" height="40">
+                    <use href="./imges/sprite.svg#burger-menu"></use>
+                </svg>
+            </button>
+            <ul class="list main-nav__contacts-list">
+                <li class="item main-nav__contacts-item">
+                    <a href="mailto:info@devstudio.com" class="link main-nav__contacts-link">info@devstudio.com
+                        <svg class="main-nav__contacts-icon" width="16" height="12">
                             <use href="./imges/sprite.svg#email"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="item contacts-item">
-                    <a href="tel:+380961111111" class="link contacts-link">+38 096 111 11 11
-                        <svg class="contacts-link-icon" width="10" height="16">
+                <li class="item main-nav__contacts-item">
+                    <a href="tel:+380961111111" class="link main-nav__contacts-link">+38 096 111 11 11
+                        <svg class="main-nav__contacts-icon" width="10" height="16">
                             <use href="./imges/sprite.svg#smartphone"></use>
                         </svg>
                     </a>
                 </li>
             </ul>
         </div>
+        <!-- <div class="mobile-menu" data-menu>
+            <div class="conteiner mobile-menu__conteiner">
+                <button type="button" class="mobile-menu__close-btn mobile-menu-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./imges/sprite.svg#close_mobile-icon"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav-list list">
+                    <li class="mobile-menu__nav-item">
+                        <a href="" class="mobile-menu__nav-link link mobile-menu__nav-link_current">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="" class="mobile-menu__nav-link link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-item">
+                        <a href="" class="mobile-menu__nav-link link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__contacts-list list">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="tel:+380961111111" class="mobile-menu__contacts-link-tel link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link-mail link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social-list list">
+                    <li class="mobile-menu__sotial-item">
+                        <a href="" class="mobile-menu__social-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__sotial-item">
+                        <a href="" class="mobile-menu__social-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__sotial-item">
+                        <a href="" class="mobile-menu__social-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__sotial-item">
+                        <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
     </header>
 
     <main>
@@ -473,6 +520,7 @@
     </footer> -->
 
     <script src="./js/model.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
