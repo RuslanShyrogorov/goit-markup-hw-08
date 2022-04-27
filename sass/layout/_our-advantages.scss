@@ -1,16 +1,4 @@
-.our-advantages .card-list {
-  display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: -30px;
-}
-
-.our-advantages .item {
-  flex-basis: calc((100% - 4 * 30px) / 4);
-  margin-left: 30px;
-}
-
-.our-advantages .over-icon {
+.card-list__over-icon{
   display: flex;
   height: 120px;
   justify-content: center;
@@ -21,20 +9,51 @@
   margin-bottom: 30px;
 }
 
-.our-advantages .icon {
-  fill: var(--title-text-color);
-}
-
-.our-advantages .subtitle {
+.card-list__subtitle{
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  
 }
 
-.our-advantages .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-
+.card-list__text{
+  margin-bottom: 30px;
   line-height: 1.71;
   text-align: left;
-  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .our-advantages__card-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+
+  .card-list__item{
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .card-list__subtitle {
+    text-align: left;
+  }
+  .card-list__text {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-advantages__card-list {
+    display: flex;
+    margin-left: -30px;
+  }
+  
+  .card-list__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin-left: 30px;
+  }
 }

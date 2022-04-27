@@ -1,33 +1,47 @@
-.hero.section {
-  max-width: 1600px;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero{
+max-width: 480px;
+height: 400px;
+background-repeat: no-repeat;
+background-size: cover;
+margin-left: auto;
+margin-right: auto;
+padding: 118px 0;
+background-color: var(--bgc-hero-color);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+  url(../imges/hero-img.jpg);
+}
+
+.hero__title{
+  width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bgc-primary-color);
   margin-left: auto;
   margin-right: auto;
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  background-color: var(--bgc-hero-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(../imges/hero-img.jpg);
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.section-hero-title {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .hero{
+    max-width: 768px;
+  }
+}
 
-  color: var(--bgc-primary-color);
-
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
+  .hero__title{
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

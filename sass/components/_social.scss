@@ -1,5 +1,6 @@
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-list-item:not(:last-child) {
@@ -34,3 +35,4 @@
 .our-team .social-list-link:focus .social-list-icon {
   fill: var(--bgc-primary-color);
 }
+
