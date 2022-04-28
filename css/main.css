@@ -842,7 +842,7 @@ body {
   justify-content: center;
   align-items: center;
   height: auto;
-  padding: 16px 32px;
+  padding: 16px 28px;
   border: 1px solid var(--svg-fill-color);
   border-radius: 4px;
   fill: var(--svg-fill-color);
