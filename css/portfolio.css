@@ -419,14 +419,17 @@ body {
 
 .list-buttons {
   display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-bottom: 40px;
   list-style: none;
 }
 
-.list-buttons .item:not(:last-child) {
-  margin-right: 8px;
+.list-buttons .item {
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .work-examples .button {
@@ -452,6 +455,16 @@ body {
 .work-examples .button.current {
   color: var(--bgc-primary-color);
   background-color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .list-buttons {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .list-buttons .item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .card-action {
@@ -503,8 +516,7 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  justify-content: center;
 }
 
 .list-examples .footer-item {
@@ -521,9 +533,11 @@ body {
 }
 
 .list-examples .item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.list-examples .item:last-child {
+  margin-bottom: 0;
 }
 
 .list-examples .link-work-examples {
@@ -532,6 +546,28 @@ body {
 
 .list-examples .link-work-examples:hover, .list-examples .link-work-examples:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .list-examples {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .list-examples .item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+  .list-examples .item:last-child {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-examples .item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .footer {
