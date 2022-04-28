@@ -2,4 +2,11 @@
   display: block;
   color: var(--bgc-primary-color);
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .logo {
+  text-align: left;
+  }
 }

@@ -1,5 +1,6 @@
 .footer-form-subscribe {
-  margin-left: auto;
+  // margin: 0 auto;
+  text-align: center;
 }
 
 .footer-form-subscribe-text {
@@ -13,7 +14,7 @@
 
 .footer-form-subscribe-input {
   display: inline-block;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -23,7 +24,8 @@
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
+  // margin-right: 12px;
 }
 
 .footer-form-subscribe-btn {
@@ -60,3 +62,35 @@
   transform: translateY(-50%);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form-subscribe-input {
+    width: 450px;
+  }
+  .footer-form-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-subscribe {
+    margin-left: auto;
+    display: block;
+    text-align: left;
+  }
+  .subscribe-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-form-subscribe-input{
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}

@@ -1,10 +1,39 @@
-.footer {
+.footer{
   background-color: var(--bgc-footer-color);
 
-  &.section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .list{
+    // text-align: center;
+    margin-bottom: 60px;
   }
+  .item:not(:last-child){
+    margin-bottom: 8px;
+  }
+  .addres {
+    color: var(--bgc-primary-color);
+    transition: color var(--time-animation) var(--animation);
+  }
+  .contacts {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--time-animation) var(--animation);
+  }
+  .link {
+    display: block;
+    text-decoration: none;
+  
+    font-style: normal;
+    line-height: 1.71;
+    text-align: center;
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+}
+
+.footer-item-social{
+  margin-bottom: 60px;
+  text-align: center;
 
   .text {
     margin-bottom: 20px;
@@ -13,46 +42,47 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+}
 
-  .item:not(:last-child) {
-    margin-bottom: 9px;
+@media screen and (min-width: 768px) {
+  .footer-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 60px;
   }
-
-  .item:last-child {
-    margin-bottom: 0px;
+  .footer-item-address{
+    margin-right: 165px;
   }
-
-  .addres {
-    color: var(--bgc-primary-color);
-    transition: color var(--time-animation) var(--animation);
+  .footer-item-social{
+    margin-bottom: 0;
   }
-
-  .contacts {
-    color: rgba(255, 255, 255, 0.6);
-    transition: color var(--time-animation) var(--animation);
+  .main-nav__logo-footer{
+    margin-right: 0;
   }
+  .footer .list{
+    margin-bottom: 0;
+  }
+  
+}
 
-  .link {
-    display: block;
-    text-decoration: none;
-
-    font-style: normal;
-    line-height: 1.71;
+@media screen and (min-width: 1200px) {
+  .footer-wrapper{
+    // margin-right: 93px;
+    margin-bottom: 0;
+  }
+  .footer-parts{
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-item-address {
+    margin-right: 70px;
+  }
+  
+  .footer .link{
     text-align: left;
-
-    &:hover,
-    &:focus {
-      color: var(--accent-text-color);
-    }
+  }
+  .footer-item-social {
+    text-align: left;
   }
 }
-
-.footer-parts {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-item-address {
-  margin-right: 70px;
-}
-
