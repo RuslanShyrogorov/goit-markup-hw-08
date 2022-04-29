@@ -1,113 +1,78 @@
-// .our-team{
-//   background-color: var(--bgc-accent-color);
-// }
+.our-team{
+  background-color: var(--bgc-accent-color);
+}
 
-// .our-team__title{
-//   font-size: 28px;
-//   margin-bottom: 30px;
-// }
+.our-team__title{
+  font-size: 28px;
+  margin-bottom: 30px;
+}
 
-// .card-item{
-//   margin-bottom: 30px;
-//   border-radius: 0px 0px 4px 4px;
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-//   0px 1px 1px rgba(0, 0, 0, 0.14),
-//   0px 2px 1px rgba(0, 0, 0, 0.2);
-// }
-// .card-item::last-child{
-//   margin-bottom: 0;
-// }
-// .card-footer{
-//   padding: 30px 122px 24px;
-//   background-color: var(--bgc-primary-color);
-//   border-radius: 0px 0px 4px 4px;
-// }
-// .our-team .subtitle {
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.19;
-//   text-align: center;
-//   margin-bottom: 10px;
-// }
-// .our-team .text {
-//   margin-bottom: 16px;
+.our-team__card-item{
+  margin-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.our-team__card-item:last-child{
+  margin-bottom: 0;
+}
 
-//   font-size: 16px;
-//   line-height: 1.19;
-//   text-align: center;
-// }
+.card-footer{
+  background-color: var(--bgc-primary-color);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  padding-top: 30px;
+  // padding-left: 122px;
+  // padding-right: 122px;
+  padding-bottom: 24px;
+}
 
-// @media screen and (min-width: 768px) {
-//   .our-team__list{
-//     display: flex;
-//     flex-wrap: wrap;
-//     // margin-bottom: -30px;
-//     // margin-left: -30px;
-//   }
-//   .card-item {
-//   flex-basis: calc((100% - 2 * 30px) / 2);
-//   // margin-left: 30px;
-//   // margin-bottom: 30px;
-//   }
-//   .card-footer {
-//     padding: 30px 74px 24px;
-//  }
-// }
+.card-footer__subtitle{
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
 
-// @media screen and (min-width: 1200px) {
-//   .our-team__list {
-//     margin-left: -30px;
-//   }
+.card-footer__text{
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .our-team__card-item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .our-team__list {
+    margin-top: 0;
+    margin-left: -30px;
+  }
   
-//   .card-item {
-//     flex-basis: calc((100% - 4 * 30px) / 4);
-//     margin-left: 30px;
-//   }
-// }
-// // .our-team.section {
-// //   background-color: var(--bgc-accent-color);
-// // }
-
-// // .our-team .title {
-// //   margin-bottom: 50px;
-// // }
-
-// // .our-team .team.list {
-// //   display: flex;
-// //   margin-top: 0px;
-// //   margin-bottom: 0px;
-// //   margin-left: -30px;
-// // }
-
-// // .our-team .card-item {
-// //   flex-basis: calc((100% - 4 * 30px) / 4);
-// //   margin-left: 30px;
-// //   border-radius: 0px 0px 4px 4px;
-// //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-// //   0px 1px 1px rgba(0, 0, 0, 0.14),
-// //   0px 2px 1px rgba(0, 0, 0, 0.2);
-// // }
-
-// // .our-team .card-footer {
-// //   padding: 30px 32px;
-// //   background-color: var(--bgc-primary-color);
-// //   border-radius: 0px 0px 4px 4px;
-// // }
-
-// // .our-team .subtitle {
-// //   font-weight: 500;
-// //   font-size: 16px;
-// //   line-height: 1.19;
-// //   text-align: center;
-// //   vertical-align: top;
-// // }
-
-// // .our-team .text {
-// //   margin-top: 0px;
-// //   margin-bottom: 16px;
-
-// //   font-size: 16px;
-// //   line-height: 1.19;
-// //   text-align: center;
-// //   vertical-align: top;
-// // }
+  .our-team__card-item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
