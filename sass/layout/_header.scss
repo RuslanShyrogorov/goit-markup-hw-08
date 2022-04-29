@@ -125,6 +125,22 @@
   color: var(--accent-text-color);
 }
 
+.mobile-menu__social-link{
+  position: relative;
+}
+
+.mobile-menu__social-link_before::before{
+  content: "";
+  display: block;
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 22px;
+  transform-origin: center left;
+  transform: rotate(-90deg);
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu-btn{
     display: none;
