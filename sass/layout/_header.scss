@@ -49,7 +49,7 @@
 .mobile-menu__conteiner{
   position: relative;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   height: 100%;
   flex-direction: column;
   padding-left: 40px;
@@ -68,6 +68,14 @@
 .mobile-menu__close-btn:hover .mobile-menu__close-icon,
 .mobile-menu__close-btn:hover .mobile-menu__close-icon{
   fill: var(--accent-text-color);
+}
+
+.mobile-menu__nav-list{
+  margin-bottom: auto;
+}
+
+.mobile-menu__contacts-list{
+  margin-bottom: 32px;
 }
 
 .mobile-menu__nav-link{
@@ -109,6 +117,11 @@
 .mobile-menu__social-list{
   display: flex;
   flex-wrap: wrap;
+  margin-top: -10px;
+}
+
+.mobile-menu__sotial-item{
+  margin-top: 10px;
 }
 
 .mobile-menu__sotial-item:not(:last-child){
