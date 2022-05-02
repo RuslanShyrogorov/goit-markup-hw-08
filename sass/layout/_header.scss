@@ -49,6 +49,7 @@
 .mobile-menu__conteiner{
   position: relative;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding-left: 40px;
   padding-top: 48px;
@@ -103,10 +104,10 @@
   color: var(--primary-text-color);
 }
 
-.mobile-menu__contacts-list{
-  margin-top: auto;
-  margin-bottom: 64px;
-}
+// .mobile-menu__contacts-list{
+//   margin-top: auto;
+//   margin-bottom: 64px;
+// }
 
 .mobile-menu__contacts-item:not(:last-child){
   margin-bottom: 32px;
