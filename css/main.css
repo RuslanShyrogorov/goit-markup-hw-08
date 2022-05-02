@@ -155,7 +155,8 @@ body {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: var(--bgc-primary-color);
@@ -176,6 +177,8 @@ body {
 
 .mobile-menu__conteiner {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -209,10 +212,6 @@ body {
   margin-bottom: 32px;
 }
 
-.mobile-menu__nav-item:last-child {
-  margin-bottom: 302px;
-}
-
 .mobile-menu__contacts-link-tel {
   font-weight: 500;
   font-size: 34px;
@@ -229,16 +228,18 @@ body {
   color: var(--primary-text-color);
 }
 
+.mobile-menu__contacts-list {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
 .mobile-menu__contacts-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mobile-menu__contacts-item:last-child {
-  margin-bottom: 64px;
-}
-
 .mobile-menu__social-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__sotial-item:not(:last-child) {
@@ -442,12 +443,12 @@ body {
   margin-right: auto;
   padding: 118px 0;
   background-color: var(--bgc-hero-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imges/hero-mobile.jpg);
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../imges/hero-img@2x.jpg);
+    background-image: url(../imges/hero-mobile@2x.jpg);
   }
 }
 
@@ -468,7 +469,17 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: url(../imges/hero-tablet.jpg);
   }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../imges/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero__title {
     width: 360px;
   }
@@ -479,7 +490,17 @@ body {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
+    background-image: url(../imges/hero-desktop.jpg);
   }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../imges/hero-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
     font-size: 44px;
@@ -979,6 +1000,8 @@ body {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bgc-footer-color);
 }
 
